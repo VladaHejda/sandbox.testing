@@ -24,4 +24,8 @@ extensions:
 	doctrine: Doctrine2Extension
 
 doctrine:
-	modelDir: app/model
+	modelDir: %appDir%/model
+	connection:
+		charset: utf8
+		collation: utf8_czech_ci
+		driver: pdo_mysql
