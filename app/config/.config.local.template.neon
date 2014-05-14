@@ -2,6 +2,6 @@ doctrine:
 	connection:
 		driver: pdo_mysql
 		host: localhost
-		dbname: bazar_knih_sample
-		user:
-		password:
+		dbname: název_databáze
+		user: uživatel
+		password: heslo
