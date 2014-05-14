@@ -2,7 +2,9 @@
 <h1>Bazar knih</h1>
 
 <ul>
-	<li n:foreach="$offers as $offer">{$offer->name}</li>
+	<li n:foreach="$offers as $offer">
+		Nabídka na knihu "<strong>{$offer->book->name}</strong>" od {$offer->name} (e-mail: {$offer->email}): {$offer->price} Kč
+	</li>
 </ul>
 
 <p><a n:href="newOffer">Nová nabídka</a></p>
