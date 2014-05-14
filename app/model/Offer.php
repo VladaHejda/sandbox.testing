@@ -15,7 +15,7 @@ class Offer extends \Nette\Object
 	/** @Column(type="string") */
 	protected $email;
 
-	/** @Column(type="decimal") */
+	/** @Column(type="float") */
 	protected $price;
 
 	/**
