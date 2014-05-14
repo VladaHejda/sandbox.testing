@@ -1,0 +1,9 @@
+{
+	"require": {
+		"nette/nette": "~2.2",
+		"doctrine/orm": "~2.4"
+	},
+	"autoload": {
+		"classmap": ["app/"]
+	}
+}

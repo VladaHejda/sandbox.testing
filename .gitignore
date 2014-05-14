@@ -1,0 +1,10 @@
+/log/*
+/temp/*
+/vendor/*
+/app/config/.config.local.neon
+/composer.lock
+
+.DS_Store
+!.gitignore
+!.htaccess
+!web.config
