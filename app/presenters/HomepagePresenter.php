@@ -23,11 +23,11 @@ class HomepagePresenter extends BasePresenter
 			->setRequired('Cena je povinná.')
 			->addRule(Form::RANGE, 'Zadej číslo.', [0, NULL]);
 
-		$dql = "SELECT b.id, b.name FROM Book b";
+		$dql = "SELECT b.id, b.author, b.name, b.year FROM Book b";
 		$books = $this->entityManager->createQuery($dql)->getResult();
 		$bookOptions = [];
 		foreach ($books as $book) {
-			$bookOptions[$book['id']] = $book['name'];
+			$bookOptions[$book['id']] = "$book[author]: $book[name] ($book[year])";
 		}
 
 		$form->addSelect('bookId', 'Kniha:', $bookOptions)
