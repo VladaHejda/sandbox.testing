@@ -1,2 +1,6 @@
 {block content}
 <h1>Bazar knih</h1>
+
+<ul>
+	<li n:foreach="$offers as $offer">{$offer->name}</li>
+</ul>

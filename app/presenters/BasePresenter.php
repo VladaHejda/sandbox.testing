@@ -7,8 +7,9 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 	protected $entityManager;
 
 
-	protected function injectEntityManager(\Doctrine\ORM\EntityManager $entityManager)
+	public function injectEntityManager(\Doctrine\ORM\EntityManager $entityManager)
 	{
+		$this->entityManager = $entityManager;
 	}
 
 }

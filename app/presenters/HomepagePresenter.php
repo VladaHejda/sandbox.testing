@@ -5,6 +5,6 @@ class HomepagePresenter extends BasePresenter
 
 	public function renderDefault()
 	{
-		$this->entityManager;
+		$this->template->offers = $this->entityManager->getRepository('Offer')->findAll();
 	}
 }
